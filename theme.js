@@ -21,5 +21,5 @@ const theme = {
     ...roboto.styles
   }
 }
-console.log(theme, "theme")
+// console.log(theme, "theme")
 export default theme
