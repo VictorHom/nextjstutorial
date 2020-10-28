@@ -1,8 +1,4 @@
-const notes = new Array(15)
-  .fill(1)
-  .map((_, i) => ({
-    id: Date.now() + i,
-    title: `Note ${i}`
-  }))
-
+const notes = [
+  {"id":1603906653576,"title":"Note 0"},{"id":1603906653577,"title":"Note 1"},{"id":1603906653578,"title":"Note 2"},{"id":1603906653579,"title":"Note 3"},{"id":1603906653580,"title":"Note 4"},{"id":1603906653581,"title":"Note 5"},{"id":1603906653582,"title":"Note 6"},{"id":1603906653583,"title":"Note 7"},{"id":1603906653584,"title":"Note 8"},{"id":1603906653585,"title":"Note 9"},{"id":1603906653586,"title":"Note 10"},{"id":1603906653587,"title":"Note 11"},{"id":1603906653588,"title":"Note 12"},{"id":1603906653589,"title":"Note 13"},{"id":1603906653590,"title":"Note 14"}
+]
 module.exports = notes
