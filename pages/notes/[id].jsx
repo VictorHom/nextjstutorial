@@ -15,7 +15,7 @@ export default ({note}) => {
 
 export async function getServerSideProps({params, req, res}) {
   const response = await fetch(`${process.env.NODE_ENV === "development" ? process.env.HOST: "https://nextjstutorial-git-master.victorhom.vercel.app"}/api/note/${params.id}`)
-
+  console.log("response", response)
   // so much power!
   if (!response.ok) {
     res.writeHead(302, { Location: '/notes' })
