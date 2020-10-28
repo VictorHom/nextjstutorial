@@ -14,7 +14,7 @@ export default ({note}) => {
 }
 
 export async function getServerSideProps({params, req, res}) {
-  const response = await fetch(`http://localhost:3000/api/note/${params.id}`)
+  const response = await fetch(`${process.env.NODE_ENV === "development" ? process.env.HOST: "https://nextjstutorial-git-master.victorhom.vercel.app"}/api/note/${params.id}`)
 
   // so much power!
   if (!response.ok) {
