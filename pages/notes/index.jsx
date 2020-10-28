@@ -29,7 +29,7 @@ export default ({ notes }) => {
 
 export async function getServerSideProps() {
   // console.log("getserversideprops in pages/notes/index", process.env.NODE_ENV, process.env.API_HOST, "host?")
-  const res = await fetch(`${process.env.NODE_ENV === "development" ? "http://localhost:3000": "https://nextjstutorial-bfy4ea23o.vercel.app"}/api/note/`)
+  const res = await fetch(`${process.env.NODE_ENV === "development" ? "http://localhost:3000": "https://nextjstutorial-git-master.victorhom.vercel.app"}/api/note/`)
   const {data} = await res.json()
   return {
     props: {notes: data}
